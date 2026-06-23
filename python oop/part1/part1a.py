@@ -1,4 +1,5 @@
-#name = "jon" #str
+# instance attributes
+# name = "jon" #str
 #age = 21 #int
 
 #print(type(name))
