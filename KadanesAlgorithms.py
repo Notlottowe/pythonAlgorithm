@@ -47,4 +47,4 @@ def slidingWindow(nums):
             maxSum = curSum
             maxL, maxR = L,R
     
-    return [maxL,maxR]
+    return [maxL,maxR] 
