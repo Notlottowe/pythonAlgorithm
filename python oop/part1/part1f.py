@@ -15,10 +15,10 @@ class BankAccount:
         else:
             print("depoit amount must be positive")
     
-    def _is_valid_amount(self,amount):
+    def _is_valid_amount(self,amount): # protected method
         return amount > 0
 
-    def __log_transaction(self,transaction_type,amount):
+    def __log_transaction(self,transaction_type,amount): # private method
         print(f"Loggin {transaction_type} of ${amount}. New balance: ${self._balance}")
 
     @staticmethod
@@ -27,6 +27,8 @@ class BankAccount:
 
 account = BankAccount("Alice", 500)
 account.deposit(100)
+
+
 
 print(BankAccount.is_value_interest_rate(3))
 print(BankAccount.is_value_interest_rate(10))
